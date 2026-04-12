@@ -27,6 +27,7 @@ const projects = [
     ],
     description:
       "Full-Stack Employee Management System built with React, TypeScript, Node.js, Express, GraphQL, and MongoDB. The platform supports employee lifecycle management, attendance tracking, leave approvals, performance reviews, notifications, and profile image uploads with role-based access control.",
+      
     highlights: [
       "Developed a full-stack Employee Management System to streamline HR operations including employee records, attendance tracking, leave management, and performance evaluation through a centralized dashboard.",
       "Built a responsive frontend using React, TypeScript, Material UI, Apollo Client, and Recharts to deliver an interactive and data-driven user experience.",
@@ -34,7 +35,7 @@ const projects = [
       "Integrated JWT authentication, Cloudinary image uploads, and Nodemailer workflows to support secure access control and automated email communication.",
     ],
     codeUrl: "https://github.com/rithanisr/Workpulse.git",
-    demoUrl: "",
+    demoUrl: "https://workpulse-sigma.vercel.app/",
     previewImages: [
       "/project-previews/employee/employee-management-1.png",
       "/project-previews/employee/employee-management-2.png",
@@ -43,6 +44,16 @@ const projects = [
       "/project-previews/employee/employee-management-5.png",
     ],
     previewClass: "project-preview-one",
+      demoFlow: [
+    "Login as Admin",
+    "Create HR and Employee accounts",
+    "Login as HR or Employee",
+    "Access role-specific dashboards"
+  ],
+  demoCredentials: {
+    email: "admin@gmail.com",
+    password: "admin@123"
+  }
   },
   {
     title: "Jewelry E-Commerce website",
@@ -73,6 +84,13 @@ const projects = [
       "/project-previews/jewelry/jewelry-ecommerce-5.png",
     ],
     previewClass: "project-preview-two",
+     demoFlow: [
+    "Create a new account",
+    "Login with your credentials",
+    "Browse products",
+    "Add to cart",
+    "Checkout and place order"
+  ]
   },
   {
     title: "News Website",
@@ -94,6 +112,12 @@ const projects = [
       "/project-previews/news/news-website-5.png",
     ],
     previewClass: "project-preview-three",
+  demoFlow: [
+  "Access the live news dashboard",
+  "Explore real-time news updates",
+  "Filter news by categories",
+  "View detailed articles in a responsive layout"
+]
   },
 ];
 
@@ -224,21 +248,66 @@ function ProjectCard({ project }) {
           {expanded ? "Show less" : "Show more"}
         </Button>
 
-        <Collapse in={expanded}>
-          <Box component="ul" sx={{ pl: 2.5, mt: 0, mb: 2.5 }}>
-            {project.highlights.map((point) => (
-              <Typography
-                component="li"
-                key={point}
-                variant="body2"
-                color="text.secondary"
-                sx={{ mb: 1.1, lineHeight: 1.75 }}
-              >
-                {point}
-              </Typography>
-            ))}
-          </Box>
-        </Collapse>
+       <Collapse in={expanded}>
+ 
+  <Box component="ul" sx={{ pl: 2.5, mt: 0, mb: 2 }}>
+    {project.highlights.map((point) => (
+      <Typography
+        component="li"
+        key={point}
+        variant="body2"
+        color="text.secondary"
+        sx={{ mb: 1.1, lineHeight: 1.75 }}
+      >
+        {point}
+      </Typography>
+    ))}
+  </Box>
+
+
+  {project.demoFlow && (
+    <Box sx={{ mb: 2 }}>
+      <Typography sx={{ fontWeight: 700, mb: 1 }}>
+        Demo Flow
+      </Typography>
+      <Box component="ul" sx={{ pl: 2.5, m: 0 }}>
+        {project.demoFlow.map((step, index) => (
+          <Typography
+            component="li"
+            key={index}
+            variant="body2"
+            color="text.secondary"
+            sx={{ mb: 0.8 }}
+          >
+            {step}
+          </Typography>
+        ))}
+      </Box>
+    </Box>
+  )}
+
+  {project.demoCredentials && (
+    <Box
+      sx={{
+        p: 1.5,
+        borderRadius: 2,
+        marginBottom: 2,
+        backgroundColor: "#f5f7fa",
+        border: "1px dashed #ccc",
+      }}
+    >
+      <Typography sx={{ fontWeight: 700, mb: 0.5 }}>
+        Demo Credentials
+      </Typography>
+      <Typography variant="body2">
+        Email: {project.demoCredentials.email}
+      </Typography>
+      <Typography variant="body2">
+        Password: {project.demoCredentials.password}
+      </Typography>
+    </Box>
+  )}
+</Collapse>
 
         <Stack
           direction={{ xs: "column", sm: "row" }}
