@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(109, 211, 207, 0.16), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(242, 143, 59, 0.12), transparent 24%),
+    #f4fbfb;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+code {
+  font-family: Consolas, 'Courier New', monospace;
+}

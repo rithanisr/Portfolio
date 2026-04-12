@@ -1,0 +1,56 @@
+S.R. RITHANI
+Junior Full Stack Developer
+Salem, Tamil Nadu
+Phone: 6383532121
+Email: rithanisr10@gmail.com
+LinkedIn: https://www.linkedin.com/in/rithani-s-r-2280038b/
+
+PROFILE SUMMARY
+Full Stack Developer with 8 months of professional experience and 4 months of internship experience in the MERN stack, TypeScript, and GraphQL. Skilled in building responsive, scalable web applications, RESTful APIs, CRUD operations, and secure authentication systems using JWT and OTP. Experienced in state management, API integration, performance optimization, debugging, and database operations.
+
+SKILLS
+Frontend: HTML, CSS, JavaScript, TypeScript, React.js, Redux Toolkit, Material UI, Bootstrap, Tailwind CSS, React Router, Responsive UI, State Management, Performance Optimization
+Backend: Node.js, Express.js, REST APIs, GraphQL, CRUD Operations, Authentication and Authorization, Error Handling
+Databases: MongoDB, Schema Design
+Tools: Git, GitLab, Jira, Postman, Jenkins (Basic CI/CD)
+Soft Skills: Team Collaboration, Problem Solving, Adaptability, Code Review, Communication
+
+WORK EXPERIENCE
+Junior Software Engineer | Pheonix Solutions | Dec 2024 - Aug 2025
+- Developed responsive web interfaces using React.js and Material UI to improve usability and functionality.
+- Integrated REST and GraphQL APIs with Node.js and Express.js to improve data flow and application performance.
+- Used Git for version control and contributed to deployment processes.
+
+React.js Developer Intern | Nutz Technovation Private Limited | Sep 2024 - Dec 2024
+- Built UI components using React.js and Material UI under mentor guidance.
+- Learned and applied new React libraries to support feature development.
+- Collaborated with mentor and team members to implement UI features and resolve issues.
+
+Full Stack Developer Intern | Innobyte Services | Mar 2024 - Apr 2024
+- Developed a JWT-based login system with OTP using the MERN stack.
+- Designed MongoDB schemas for user data and OTP storage.
+- Implemented OTP verification with Node.js and Express.js and connected it with the React frontend.
+
+OTHER EXPERIENCE
+Subject Matter Expert | Scope-e Knowledge Center | Nov 2018 - Sep 2020
+Project Engineer | Softrix Technology | Nov 2016 - Oct 2018
+
+PROJECTS
+Employee Management System
+- Built a secure employee platform with JWT-based authentication, role-based access, and CRUD features.
+- Designed GraphQL queries and mutations using Apollo Server.
+- Improved maintainability using TypeScript.
+
+E-commerce Website
+- Developed a full-stack commerce platform with product CRUD and REST API integration.
+- Built the frontend in React.js and backend with Node.js and Express.js.
+- Implemented MongoDB schemas, Axios integration, and Postman endpoint testing.
+
+News Website
+- Created a responsive news portal using React.js, Bootstrap, Axios, and React Router.
+- Added loading states, reusable components, and error handling.
+
+EDUCATION
+Bachelor of Electronics and Communication Engineering
+M. Kumarasamy College of Engineering, Karur, Tamil Nadu
+Graduated in 2016 | CGPA: 8.11
