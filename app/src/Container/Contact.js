@@ -5,13 +5,11 @@ import {
   Typography,
   Button,
   IconButton,
-  Tooltip,
   Chip,
 } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
-import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import naukari from "../asset/naukari.png";

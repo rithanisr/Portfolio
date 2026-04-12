@@ -3,11 +3,9 @@ import {
   Box,
   Button,
   Chip,
-  Collapse,
   Paper,
   Stack,
   Typography,
-  Link,
   Container,
 } from "@mui/material";
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
@@ -31,11 +29,7 @@ export default function About() {
     <Container maxWidth="lg">
       <Box
         sx={{
-       
-            width: "100%",
-   
-  
-  
+          width: "100%",
         }}
       >
         <Box>
@@ -84,14 +78,19 @@ export default function About() {
             integrations, authentication systems, and deployment workflows.
           </Typography>
 
-          <Stack direction="row" spacing={1.2} useFlexGap flexWrap="wrap"  
-          sx={{
-    maxWidth: "100%",
-    alignContent: "flex-start",
-    mb:2,
-     display: "flex",
-    flexWrap: "wrap",
-  }}>
+          <Stack
+            direction="row"
+            spacing={1.2}
+            useFlexGap
+            flexWrap="wrap"
+            sx={{
+              maxWidth: "100%",
+              alignContent: "flex-start",
+              mb: 2,
+              display: "flex",
+              flexWrap: "wrap",
+            }}
+          >
             {strengths.map((item) => (
               <Chip key={item} label={item} className="soft-chip" />
             ))}
