@@ -40,6 +40,16 @@ const skillGroups = [
       "Jenkins",
     ],
   },
+  {
+    title: "AI Tools",
+    skills: [
+      "Codex",
+      "Copilot",
+      "Cursor",
+      "Gork",
+      "Google Gemini",
+    ],
+  },
 ];
 
 export default function Skills() {

@@ -12,7 +12,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import image2 from "../asset/image2.png";
+import photo from "../asset/photo.png";
 
 const stats = [
   { value: "1 year", label: "Experience" },
@@ -132,7 +132,6 @@ export default function Home() {
                   mb: 3,
                   lineHeight: 1.8,
                   fontSize: { xs: "auto", md: "1.05rem" },
-                   
                 }}
               >
                 I build responsive interfaces, secure backend systems, and
@@ -141,27 +140,26 @@ export default function Home() {
               </Typography>
 
               {/* BUTTON */}
-             <Stack
-  direction={{ xs: "column", sm: "row" }}
-  spacing={2}
-  justifyContent={{ xs: "center", lg: "flex-start" }}
-  alignItems={{ xs: "center", lg: "flex-start" }} 
-  
-  sx={{ mb: 3,   px: { xs: 5, md: 0 }, }}
->
-  <Button
-    variant="contained"
-    startIcon={<DownloadRoundedIcon />}
-    href="/Resume.pdf"
-    download
-    sx={{
-      width: { xs: "100%", sm: "auto" },
-      maxWidth: 260,
-    }}
-  >
-    Download CV
-  </Button>
-</Stack>
+              <Stack
+                direction={{ xs: "column", sm: "row" }}
+                spacing={2}
+                justifyContent={{ xs: "center", lg: "flex-start" }}
+                alignItems={{ xs: "center", lg: "flex-start" }}
+                sx={{ mb: 3, px: { xs: 5, md: 0 } }}
+              >
+                <Button
+                  variant="contained"
+                  startIcon={<DownloadRoundedIcon />}
+                  href="/Resume.pdf"
+                  download
+                  sx={{
+                    width: { xs: "100%", sm: "auto" },
+                    maxWidth: 260,
+                  }}
+                >
+                  Download CV
+                </Button>
+              </Stack>
 
               {/* CONTACT */}
               <Stack
@@ -207,7 +205,9 @@ export default function Home() {
               >
                 {stats.map((stat) => (
                   <Box key={stat.label} className="hero-stat-card">
-                    <Typography sx={{ fontWeight: 600 }}>{stat.value}</Typography>
+                    <Typography sx={{ fontWeight: 600 }}>
+                      {stat.value}
+                    </Typography>
                     <Typography variant="body2">{stat.label}</Typography>
                   </Box>
                 ))}
@@ -236,7 +236,7 @@ export default function Home() {
                 <Box className="hero-photo-mask">
                   <Box
                     component="img"
-                    src={image2}
+                    src={photo}
                     alt="S R Rithani"
                     className="hero-framed-image"
                   />
