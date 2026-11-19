@@ -150,7 +150,7 @@ export default function Home() {
                 <Button
                   variant="contained"
                   startIcon={<DownloadRoundedIcon />}
-                  href="/Resume.pdf"
+                  href="Resume.pdf"
                   download
                   sx={{
                     width: { xs: "100%", sm: "auto" },
